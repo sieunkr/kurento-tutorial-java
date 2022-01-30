@@ -189,6 +189,8 @@ public class CallHandler extends TextWebSocketHandler {
       viewers.put(session.getId(), viewer);
 
       WebRtcEndpoint nextWebRtc = new WebRtcEndpoint.Builder(pipeline).build();
+      
+      log.info("turn:" + nextWebRtc.getTurnUrl());
 
       nextWebRtc.addIceCandidateFoundListener(new EventListener<IceCandidateFoundEvent>() {
 

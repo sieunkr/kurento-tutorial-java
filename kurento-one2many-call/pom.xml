@@ -19,7 +19,7 @@
 	<!-- Project configuration -->
 
 	<properties>
-		<demo.port>8443</demo.port>
+		<demo.port>8081</demo.port>
 		<start-class>org.kurento.tutorial.one2manycall.One2ManyCallApp</start-class>
 	</properties>
 
